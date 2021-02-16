@@ -94,6 +94,14 @@ public class Game {
         return "You lose";
     }
 
+    public static String display(byte[] b1) {
+        StringBuilder strBuilder = new StringBuilder();
+        for(byte val : b1) {
+            strBuilder.append(String.format("%02x", val&0xff));
+        }
+        return strBuilder.toString();
+    }
+
     String getMoveOfComputerName(){
         return moveOfComputerName;
     }

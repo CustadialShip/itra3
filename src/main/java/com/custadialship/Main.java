@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("Computer move:" + (game.getMoveOfComputerName()));
                     game.setMoveOfUser(moveOfUser);
                     System.out.println(game.resultOfGame());
-                    System.out.println("Key: " + game.getKey());
+                    System.out.println("Key: " + Game.display(game.getKey()));
                     System.out.println("------------------------------------------------------------------------------");
                 }
             }
